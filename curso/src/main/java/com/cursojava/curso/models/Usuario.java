@@ -1,4 +1,5 @@
-package models;
+package com.cursojava.curso.models;
+
 
 public class Usuario {
     private String nombre;
@@ -10,14 +11,6 @@ public class Usuario {
 
     public String getNombre() {
         return nombre;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public void setNombre(String nombre) {
@@ -56,4 +49,11 @@ public class Usuario {
         this.telefono = telefono;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

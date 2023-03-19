@@ -1,5 +1,7 @@
-package controllers;
-import models.Usuario;
+package com.cursojava.curso.controllers;
+import com.cursojava.curso.models.Usuario;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,8 +12,10 @@ import java.util.List;
 @RestController
 
 public class UsuarioControllers {
-    @RequestMapping(value= "usuario/{id}")
+
+    @RequestMapping(value="usuarios/{id}")
     public Usuario getUsuario(@PathVariable Long id){
+
         Usuario usuario = new Usuario();
         usuario.setId(id);
         usuario.setNombre("lucas");
@@ -21,8 +25,8 @@ public class UsuarioControllers {
 
         return usuario;
     }
-   /* @RequestMapping(value= "usuario")
-    public List<Usuario> getUsuario(){
+    @RequestMapping(value= "usuarios")
+    public List<Usuario> getUsuarios(){
         List <Usuario> usuarios = new ArrayList<>();
         Usuario usuario = new Usuario();
         usuario.setId(243L);
@@ -50,7 +54,7 @@ public class UsuarioControllers {
         usuarios.add(usuario3);
 
         return usuarios;
-    }*/
+    }
 
     @RequestMapping(value= "usuario32")
     public Usuario modificar(){
