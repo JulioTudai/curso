@@ -32,7 +32,7 @@ public class UsuarioControllers {
 
         return usuario;
     }
-    @RequestMapping(value= "usuario32")
+    @RequestMapping(value= "usuario322")
     public Usuario eliminar(){
         Usuario usuario = new Usuario();
 
@@ -43,7 +43,7 @@ public class UsuarioControllers {
 
         return usuario;
     }
-    @RequestMapping(value= "usuario32")
+    @RequestMapping(value= "usuario332")
     public Usuario buscar(){
         Usuario usuario = new Usuario();
 

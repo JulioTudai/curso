@@ -1,12 +1,12 @@
 // Call the dataTables jQuery plugin
 $(document).ready(function() {
  cargarUsuarios();
-  $('#usuarios').DataTable();
+  $('#usuario').DataTable();
 });
 
 async function cargarUsuarios(){
 
-  const request = await fetch('usuario/2343', {
+  const request = await fetch('usuario/2343',{
     method: 'GET',
     headers: {
       'Accept': 'application/json',
